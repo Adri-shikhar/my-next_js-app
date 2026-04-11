@@ -18,6 +18,7 @@ const DashboardLayout = ({ children }) => {
       <Link href="/dashboard">Dashboard</Link>
       <Link href="/dashboard/profile">Profile</Link>
       <Link href="/dashboard/user">User</Link>
+      
     </ul>
   </div>
 </div>
