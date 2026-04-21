@@ -1,15 +1,17 @@
 import Link from 'next/link';
 import React from 'react';
+import { ModalForm } from './Task';
 
 const Navbar = () => {
 
-     const links=<>
-     
-       <li><Link href="/about">About</Link></li>
-       <li><Link href="/contact">Contact</Link></li>
+    const links = <>
+
+        <li><Link href="/about">About</Link></li>
+        <li><Link href="/contact">Contact</Link></li>
+        <li><Link href="/products">Products</Link></li>
         <li><Link href="/about/developers">Development</Link></li>
         <li><Link href="/dashboard">Dashboard</Link></li>
-     </>
+    </>
     return (
         <div>
             <div className="navbar bg-base-100 shadow-sm">
@@ -21,9 +23,10 @@ const Navbar = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                                {links}
-                            
+                            {links}
+
                         </ul>
+                       
                     </div>
                     <Link href="/" className="btn btn-ghost text-xl">
                         daisyUI
